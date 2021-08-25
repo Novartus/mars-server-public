@@ -1,0 +1,165 @@
+head
+  style(type='text/css' title='x-apple-mail-formatting').
+  title Movies Mars
+  meta(name='viewport' content='width = 375, initial-scale = -1')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='x-apple-disable-message-reformatting')
+  link(rel='stylesheet' href='https://font.typeform.com/dist/font-email.css')
+  style(type='text/css').
+    @font-face {
+    font-family: apercu-pro;
+    font-style: normal;
+    font-weight: 400;
+    src: local("apercu-pro"),
+    url(https://font.typeform.com/dist/fonts/ApercuPro-Regular.woff2)
+    format("woff");
+    }
+    body,
+    td {
+    font-family: Arial, Helvetica, sans-serif;
+    }
+    strong {
+    font-weight: bold;
+    }
+    p {
+    margin: 0;
+    padding: 0 0 1em 0;
+    }
+    a {
+    text-decoration: none;
+    }
+    @media all and (max-width: 520px) {
+    .hide_on_mobile {
+    display: none !important;
+    }
+    .show_on_mobile {
+    display: block !important;
+    margin: auto !important;
+    float: left !important;
+    }
+    .fullwidth {
+    width: 100% !important;
+    height: auto !important;
+    min-width: 100% !important;
+    float: none !important;
+    }
+    .padded {
+    box-sizing: border-box;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+    }
+    #logo {
+    float: none !important;
+    }
+    .button {
+    font-size: 16px !important;
+    }
+    .content td {
+    padding-right: 10px !important;
+    }
+    }
+    @media screen {
+    body,
+    td {
+    font-family: apercu-pro, sans-serif !important;
+    }
+    }
+  style(type='text/css').
+  style(type='text/css').
+table.fullwidth(border='0' cellpadding='0' cellspacing='0' width='100%' bgcolor='#FFFFFF')
+  tbody
+    tr
+      td
+        table.fullwidth(border='0' cellpadding='0' cellspacing='0' width='600' align='center' style='margin: auto')
+          tbody
+            tr
+              td.masthead.padded(style='padding: 30px 30px 20px 0px')
+                a#logo(href='https://movies-mars.netlify.app' style='\
+                color: #e4b83a;\
+                text-decoration: none;\
+                display: block;\
+                float: left;\
+                ')
+                  img.hide_on_mobile(src='https://drive.google.com/uc?export=view&id=1WHQBezCG3zVJN7Z0DNFdcXZb0nKOWMOH' width='100' alt='t' style='\
+                  -ms-interpolation-mode: bicubic;\
+                  display: block;\
+                  border: none;\
+                  ')
+                  // [if !mso] <!
+                  img.show_on_mobile(src='https://s3.amazonaws.com/typeform-marketing-images/Logo_Mobile.png' width='60' style='display: none')
+                  //
+                    <!
+                                      [endif]
+            tr
+              td.content
+                div(mc:repeatable='Hero Section')
+                  table(border='0' cellpadding='0' cellspacing='0' width='100%')
+                    tbody
+                      tr
+                        td.padded(style='padding: 0 30px')
+                          table.fullwidth(border='0' cellpadding='0' cellspacing='0' width='100%' style='border-bottom: 1px solid #e7e7e7')
+                            tbody
+                              tr
+                                td.avenir(style='\
+                                padding: 20px 0;\
+                                text-align: left;\
+                                font-weight: 500;\
+                                font-size: 24px;\
+                                color: #343333;\
+                                ' mc:edit='title')
+                                  | Hello #{name}, 
+                                  | Someone told us that you lost your previous code? 
+                              tr
+                                td(style='\
+                                padding: 0 80px 0 0;\
+                                font-size: 18px;\
+                                line-height: 167%;\
+                                font-weight: 400;\
+                                color: #343333;\
+                                ' mc:edit='copy 1')
+                                  | Don&apos;t worry, you&rsquo;re just a code away 
+                              tr
+                                td(style='\
+                                padding: 0 80px 0 0;\
+                                font-size: 18px;\
+                                line-height: 167%;\
+                                font-weight: 400;\
+                                color: #343333;\
+                                ' mc:edit='copy 1')
+                                  p
+                                    | Use this verification code to verify your email address 
+                              tr
+                                td(style='padding: 30px 0 60px 0' mc:edit='button')
+                                  //if mso
+                                    table(border='0' cellpadding='0' cellspacing='0' align='left' bgcolor='#343333')
+                                      tr
+                                        td(align='left')
+                                  div(align='left')
+                                    .button(style='\
+                                    text-decoration: none;\
+                                    color: #ffffff;\
+                                    background-color: #343333;\
+                                    display: inline-block;\
+                                    padding: 15px 20px;\
+                                    margin: auto;\
+                                    border: 2px solid #343333;\
+                                    border-radius: 3px;\
+                                    font-size: 18px;\
+                                    font-weight: 500;\
+                                    ')
+                                      | #{verificationCode}
+                                  //if mso
+                          table.fullwidth(border='0' cellpadding='0' cellspacing='0' width='100%')
+                            tbody
+                              tr
+                                td(style='\
+                                padding: 20px 80px 0 0;\
+                                font-size: 16px;\
+                                line-height: 167%;\
+                                font-weight: 400;\
+                                color: #343333;\
+                                ' mc:edit='copy 2')
+                                  p
+                                    | Sent From Movies Mars 
+                                    br
+                                    | Didn&rsquo;t ask for this email? Just ignore me. 

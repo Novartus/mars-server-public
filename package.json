@@ -1,0 +1,47 @@
+{
+  "name": "movies-mars-backend",
+  "version": "2.3.0",
+  "description": "Movies Mars Backend with JWT",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "pretty": "prettier --write \"./**/*.{js,jsx,json}\""
+  },
+  "author": "Abhee Hudani",
+  "license": "ISC",
+  "dependencies": {
+    "@sentry/node": "^6.1.0",
+    "@testmail.app/graphql-request": "^1.8.4",
+    "bcrypt": "^5.0.0",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "chalk": "^4.1.0",
+    "configcat-node": "^5.0.2",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "email-templates": "^7.1.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "fs": "0.0.1-security",
+    "helmet": "^4.1.1",
+    "jsonwebtoken": "^8.5.1",
+    "logger": "0.0.1",
+    "method-override": "^3.0.0",
+    "moment": "^2.29.1",
+    "morgan": "^1.10.0",
+    "node-cron": "^2.0.3",
+    "node-fetch": "^2.6.1",
+    "node-ipinfo": "^2.0.2",
+    "nodemailer": "^6.4.11",
+    "npm": "^6.14.8",
+    "pg": "^8.5.1",
+    "sequelize": "^6.5.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.9",
+    "@types/express-session": "^1.17.3",
+    "nodemon": "^2.0.4",
+    "prettier": "^2.1.2"
+  }
+}

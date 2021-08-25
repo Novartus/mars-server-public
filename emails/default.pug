@@ -1,0 +1,14 @@
+//- include includes/header.pug
+body
+  .email-page
+    //- include includes/header-logo.pug
+
+  section.email-page__content(style="background-color: #fff;border-top: 2px solid #dadada;border-bottom: 2px solid #dadada;padding: 20px;")
+    .email-page__box(style="max-width: 600px;margin: 0 auto;")
+      p
+        b= `Hello, ${username},`
+      p= `${message}`
+
+      p.regards Thank you for joining Movies Mars Family!
+
+//-   include includes/footer.pug
